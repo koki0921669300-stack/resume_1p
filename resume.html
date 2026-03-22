@@ -2,19 +2,51 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>林子鈺的履歷</title>
     <style>
-        body { text-align: center; font-family: sans-serif; background: #f4f4f4; padding: 50px; }
-        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: inline-block; }
-        img { width: 200px; border-radius: 15px; }
+        body { font-family: sans-serif; background: #f4f7f6; display: flex; justify-content: center; padding: 40px; margin: 0; }
+        .container { background: white; width: 800px; display: flex; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .sidebar { background: #eef2f3; width: 250px; padding: 30px; text-align: center; border-right: 1px solid #ddd; }
+        .main-content { flex: 1; padding: 40px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 15px; object-fit: cover; margin-bottom: 20px; background: #ccc; }
+        h1 { margin: 0; color: #333; }
+        h2 { border-bottom: 2px solid #4a90e2; padding-bottom: 5px; color: #4a90e2; font-size: 1.2em; margin-top: 30px; }
+        .info-box { background: #4a90e2; color: white; padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 10px; font-size: 0.9em; }
+        ul { padding-left: 20px; line-height: 1.8; color: #555; }
+        .footer { font-size: 0.8em; color: #aaa; margin-top: 50px; text-align: right; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <img src="955291DA-C1FD-4A2B-92E6-0A83B3E86C45_1_105_c.jpeg" alt="照片">
-        <h1>林子鈺</h1>
-        <p>亞洲大學 學生 | 學號：AU114054039</p>
-        <p>這是我第一份用 GitHub Pages 製作的網頁履歷！</p>
+    <div class="container">
+        <div class="sidebar">
+            <img src="myphoto.jpg" alt="照片" class="profile-img">
+            <p style="color: #888;">學生編號：</p>
+            <div class="info-box">114054039</div>
+        </div>
+
+        <div class="main-content">
+            <h1>林子鈺</h1>
+            <p style="color: #666;">第一學年 · 亞洲大學 · 學生</p>
+
+            <h2>個人簡介</h2>
+            <p style="color: #555;">這是我的第一份用 GitHub Pages 製作的網頁履歷！我正在學習網頁開發與 Git 版本控制。</p>
+
+            <h2>學歷</h2>
+            <p><strong>亞洲大學</strong><br>第一學年 (在學)</p>
+
+            <h2>技能</h2>
+            <ul>
+                <li>基礎 HTML / CSS</li>
+                <li>Git & GitHub 操作</li>
+                <li>VS Code 使用</li>
+            </ul>
+
+            <h2>聯絡方式</h2>
+            <p>Email: 這裡可以填寫妳的 Email</p>
+
+            <div class="footer">最後更新：2026/03/22</div>
+        </div>
     </div>
 </body>
 </html>
