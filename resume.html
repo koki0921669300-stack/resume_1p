@@ -51,22 +51,22 @@
             <p>Email: koki0921669300@gmail.com</p>
 
             <div class="footer">最後更新：2026/03/22</div>
-        </div>
-    </div><audio id="bgMusic" loop>
-    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_7306236b2d.mp3" type="audio/mpeg">
+        </div><audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 <script>
     function playMusic() {
         var audio = document.getElementById('bgMusic');
-        audio.play().catch(function(e) {
-            console.log("播放失敗:", e);
+        audio.volume = 1.0;
+        audio.play().then(function() {
+            console.log("播放成功！");
+        }).catch(function(error) {
+            console.log("失敗原因：", error);
+            alert("請確認妳已上傳 music.mp3 到 GitHub 並且沒有開靜音喔！");
         });
-        
-        // 隱藏按鈕畫面，顯示妳原本的履歷
         document.getElementById('music-start').style.display = 'none';
     }
 </script>
-
 </body>
 </html>
